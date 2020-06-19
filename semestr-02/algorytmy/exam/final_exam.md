@@ -15,7 +15,6 @@ for (i=1; i<=n; i++)
 ##### Gdzie "T" oznaczna złożoność Theta
 
 ##### Odpowiedź:
-
 T( n * log n )  czyli (b)
 
 ##### Uzasadnienie:
@@ -44,7 +43,6 @@ ma złożoność (wybierz najbardziej precyzyjną formułę)
 * "OMG" oznaczna złożoność Omega
 
 ##### Odpowiedź:
-
 T(n) czyli (a).
 
 ##### Uzasadnienie: 
@@ -66,7 +64,6 @@ OMG(n) < T(n) < O(n).
 (c) instrukcje rozpoczynające każdą procedurę
 (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
 (e) instrukcje, które są zawsze poprawne
-
 
 ##### Odpowiedź:
 (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
