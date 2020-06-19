@@ -71,8 +71,6 @@ ________________________________________________________________________________
 ###### (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
 
 ##### Uzasadnienie: 
-Z wykładu:
-
 ```
 Instrukcje dominujące w algorytmie to takie, że liczba wszystkich
 wykonywanych instrukcji elementarnych jest proporcjonalna do t(d).
@@ -87,7 +85,7 @@ ________________________________________________________________________________
 
 #### 2.1 Sortowanie metodą wstawiania
 * (a) jest niestabilne 
-* (b) ma średnią złożoność T(n log n) 
+* (b) ma średnią złożoność T(n log n)  `// "T" oznaczna złożoność Theta`
 * (c) działa w czasie liniowym 
 * (d) szybko sortuje ciągi prawie posortowane 
 * (e) wykonuje najmniej zamian
@@ -96,8 +94,6 @@ ________________________________________________________________________________
 ###### (d) szybko sortuje ciągi prawie posortowane 
 
 ##### Uzasadnienie: 
-Z wykładu:
-
 ```
 Zalety:
     Stabilność
@@ -119,10 +115,10 @@ ________________________________________________________________________________
 ###### (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
 
 ##### Uzasadnienie: 
-Z wykładu:
-
-`Metoda sortowania jest stabilna, jeśli zachowuje względną kolejność elementów o
-jednakowych kluczach`
+```
+Metoda sortowania jest stabilna, jeśli zachowuje względną kolejność elementów o
+jednakowych kluczach
+```
 
 ##### Na podstawie:
 [ślusarek wykład 1 notatki 02, od str 1](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_02.pdf&embedded=true&chrome=false&dov=1)
@@ -139,7 +135,7 @@ ________________________________________________________________________________
 ###### (c) mała liczba zamian
 
 ##### Uzasadnienie: 
-Z wykładu:
+
 ```
 Zalety:
 - Wykonuje tylko n-1 zamian (istotne dla długich rekordów)
@@ -159,7 +155,7 @@ ________________________________________________________________________________
 ###### (e) metody wstawiania
 
 ##### Uzasadnienie: 
-Z wykładu:
+
 
 ```
 Zalety:
@@ -174,40 +170,139 @@ ________________________________________________________________________________
 
 ### 3. Sortowanie metodą "dziel i zwyciężaj"
 #### 3.1 Główną wadą algorytmu mergesort jest
-(a) duża pesymistyczna złożoność
-(b) duża pamięć robocza
-(c) niemożność zaprogramowania bez użycia rekurencji
-(d) niestabilność
-(e) żadne z pozostałych
+* (a) duża pesymistyczna złożoność
+* (b) duża pamięć robocza
+* (c) niemożność zaprogramowania bez użycia rekurencji
+* (d) niestabilność
+* (e) żadne z pozostałych
+
+##### Odpowiedź: 
+###### (b) duża pamięć robocza
+
+##### Uzasadnienie: 
+```
+Ponieważ scalanie jest związane z przepisywaniem wymaga to dodatkowej roboczej tablicy
+wielkości tej samej co tablica a[].
+```
+
+##### Na podstawie:
+[ślusarek wykład 1 notatki 03, str 3](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+
+________________________________________________________________________________________
 
 #### 3.2. Średnia złożoność algorytmu quicksort wynosi
-(a) około 0,27 n (b) około 1,4 log n
-(c) O(n log n) (d) O(n2)
-(e) O(n loglog n)
+* (a) około 0,27 n 
+* (b) około 1,4 log n
+* (c) O(n log n) 
+* (d) O(n2)
+* (e) O(n log(log n))
+
+##### Odpowiedź: 
+###### (c) O(n log n) 
+
+##### Uzasadnienie: 
+```
+Ważna własność nr 4: A(n) ≈ 1.4 n lg n
+(dowód dość trudny, np. z wykorzystaniem liczb harmonicznych).
+Można wykazać, że odchylenie standardowe od wartości oczekiwanej wynosi około 0.27 * n,
+zatem jest bardzo małe (liniowego rzędu, gdy tymczasem wartość oczekiwana jest rzędu n log n). Wniosek:
+
+Ważna własność nr 5:
+Jeśli na wejściu do algorytmu quicksort podana jest losowa permutacja danych, to z bardzo
+dużym prawdopodobieństwem algorytm wykonuje w przybliżeniu 1.4 n lg n porównań
+(inaczej: prawdopodobieństwo że algorytm będzie wykonywał dużo więcej lub dużo mniej 
+niż 1.4 n lg n porównań jest bardzo małe).
+```
+1.4 n  n czyli w zasadzie n logn --> O(n log n) 
+
+##### Na podstawie:
+[ślusarek wykład 1 notatki 03, str 7](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+
+________________________________________________________________________________________
+
 #### 3.3. Algorytmem quicksort sortujemy ciąg 7-elementowy postaci: 4, 3, 4, 5, 1, 6, 2. Po pierwszym
 wykonaniu funkcji Partition rozmiary lewego i prawego podzadania wynoszą odpowiednio
-(a) 4 i 2 (b) 3 i 3
-(c) 2 i 4 (d) 1 i 5
+(a) 4 i 2 
+(b) 3 i 3
+(c) 2 i 4 
+(d) 1 i 5
 (e) 0 i 6
+
+##### Odpowiedź: 
+###### (b) 3 i 3
+
+##### Uzasadnienie: 
+L=P=(n−1)/2 --> ilosc elementów w obu polowkach dla tablicy z nieparzystą ilością elementów
+L=n/2, P=(n/2) - 1  -->ilosc elementów w obu polowkach dla tablicy z nieparzystą ilością elementów
+
+##### Na podstawie:
+[WWW](https://pl.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/analysis-of-quicksort)
+
+________________________________________________________________________________________
+
 #### 3.4. Quicksort jest algorytmem skonstruowanym techniką
 (a) programowania dynamicznego
 (b) dziel i zwyciężaj
 (c) zachłanną
 (d) nawrotów (backtracking)
 (e) żadną z pozostałych
+
+##### Odpowiedź: 
+###### (b) dziel i zwyciężaj
+
+##### Uzasadnienie:
+```
+Quicksort algorytm typu "dziel i zwyciężaj”
+```
+
+##### Na podstawie:
+[ślusarek wykład 1 prezentacja 03, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234330-prezentacja_03.pdf&embedded=true&chrome=false&dov=1)
+
+________________________________________________________________________________________
+
 #### 3.5. Algorytm quicksort działa w czasie
-(a) Q(n), dla niektórych danych wejściowych
-(b) Q(n log n) dla danych posortowanych
-(c) Q(n log n), w najlepszym razie
-(d) Q(n2
-) jeśli wszystkie klucze są jednakowe
-(e) Q(n log n), w najgorszym razie
+* (a) T(n), dla niektórych danych wejściowych
+* (b) T(n log n) dla danych posortowanych
+* (c) T(n log n), w najlepszym razie
+* (d) T(n2) jeśli wszystkie klucze są jednakowe
+* (e) T(n log n), w najgorszym razie
+
+##### Gdzie "T" oznaczna złożoność Theta
+
+##### Odpowiedź: 
+###### (d) T(n2) jeśli wszystkie klucze są jednakowe
+
+##### Uzasadnienie: 
+Własność nr 3: Złożoność pesymistyczna algorytmu quicksort
+jest kwadratowa:
+
+PES(n) = 1/2 n2 + O(n) = T(n2) // gdzie PES(n) oznacza złożoność pesymistyczną
+
+##### Na podstawie:
+[ślusarek wykład 1 prezentacja 02, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234328-prezentacja_02.pdf&embedded=true&chrome=false&dov=1)
+
+________________________________________________________________________________________
+
 #### 3.6. Algorytmem quicksort sortujemy ciąg 8-elementowy postaci:
 4, 3, 4, 4, 4, 5, 5, 5.
 Po pierwszym wykonaniu funkcji Partition rozmiary lewego i prawego podzadania wynoszą
 odpowiednio
-(a) 4 i 3 (b) 3 i 4
-(c) 5 i 3 (d) 1 i 6
+* (a) 4 i 3 
+* (b) 3 i 4
+* (c) 5 i 3 
+* (d) 1 i 6
+
+##### Odpowiedź: 
+###### (a) 4 i 3 
+
+##### Uzasadnienie: 
+tablicy z nieparzystą ilością elementów --> L=P=(n−1)/2
+tablicy z nieparzystą ilością elementów --> L=n/2, P=(n/2) - 1
+
+##### Na podstawie:
+[WWW](https://pl.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/analysis-of-quicksort)
+
+________________________________________________________________________________________
 
 #### 3.7. Modyfikacja quicksort-u, polegająca na losowaniu elementu dzielącego powoduje, że
 (a) jedno podzadanie jest zawsze puste
@@ -215,14 +310,34 @@ odpowiednio
 (c) nigdy nie występuje przypadek pesymistyczny
 (d) oczekiwana liczba porównań nie zależy od danych wejściowych
 (e) złożoność algorytmu się zmniejsza
+
+##### Odpowiedź: 
+######
+
+##### Uzasadnienie: 
+
+##### Na podstawie:
+[ślusarek wykład 1 prezentacja 02, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234328-prezentacja_02.pdf&embedded=true&chrome=false&dov=1)
+
+________________________________________________________________________________________
+
 #### 3.8. Złożoność pewnego algorytmu skonstruowanego metodą "dziel i zwyciężaj" jest opisana
 równaniem rekurencyjnym:
 T(1) = 1
 T(n) = 2T(n/2) + 3n, dla n>1.
 Złożoność tego algorytmu wynosi:
-(a) O(n3
-) (b) O(log n)
-(c) O(n log n) (d) O(n5
-)
+(a) O(n3) 
+(b) O(log n)
+(c) O(n log n) 
+(d) O(n5)
+(e) O(n log(log n))
 
-(e) O(n loglog n)
+##### Odpowiedź: 
+######
+
+##### Uzasadnienie: 
+
+##### Na podstawie:
+[ślusarek wykład 1 prezentacja 02, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234328-prezentacja_02.pdf&embedded=true&chrome=false&dov=1)
+
+________________________________________________________________________________________
