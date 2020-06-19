@@ -346,6 +346,7 @@ T(n) = 2 T(n/2) + n = 2 ( 2 T(n/4) + n/2) + n
 = 2 ( . . . 2 ( 2 ( 2 T(1) + 2 ) + 4 ) + . . . ) + n/2 ) + n
 = 2^log(n) * T(1) + n * lg n = n log(n)
 ```
+n log(n) dla quick sorta oraz dla sortowania przez scalanie
 
 ##### Na podstawie:
 [ślusarek wykład 1 notatki 03, str 5](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
