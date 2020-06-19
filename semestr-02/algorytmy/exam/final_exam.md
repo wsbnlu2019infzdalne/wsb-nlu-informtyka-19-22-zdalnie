@@ -45,7 +45,7 @@ ma złożoność (wybierz najbardziej precyzyjną formułę)
 
 ##### Odpowiedź:
 
-T(n) czyli (a)
+T(n) czyli (a).
 
 ##### Uzasadnienie: 
 Odrzucam **c** i **e** ponieważ jest tylko jedna pętla więc nie mam mowy o iloczynie.
