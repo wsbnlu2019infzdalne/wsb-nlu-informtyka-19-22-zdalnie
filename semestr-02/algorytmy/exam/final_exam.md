@@ -187,7 +187,6 @@ wielkości tej samej co tablica a[].
 
 ##### Na podstawie:
 [ślusarek wykład 1 notatki 03, str 3](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
-
 ________________________________________________________________________________________
 
 #### 3.2. Średnia złożoność algorytmu quicksort wynosi
@@ -217,7 +216,6 @@ niż 1.4 n lg n porównań jest bardzo małe).
 
 ##### Na podstawie:
 [ślusarek wykład 1 notatki 03, str 7](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
-
 ________________________________________________________________________________________
 
 #### 3.3. Algorytmem quicksort sortujemy ciąg 7-elementowy postaci: 4, 3, 4, 5, 1, 6, 2. Po pierwszym
@@ -232,12 +230,12 @@ wykonaniu funkcji Partition rozmiary lewego i prawego podzadania wynoszą odpowi
 ###### (b) 3 i 3
 
 ##### Uzasadnienie: 
-L=P=(n−1)/2 --> ilosc elementów w obu polowkach dla tablicy z nieparzystą ilością elementów
-L=n/2, P=(n/2) - 1  -->ilosc elementów w obu polowkach dla tablicy z nieparzystą ilością elementów
+tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
+
+tablica z nieparzystą ilością elementów --> L=n/2, P=(n/2) - 1
 
 ##### Na podstawie:
 [WWW](https://pl.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/analysis-of-quicksort)
-
 ________________________________________________________________________________________
 
 #### 3.4. Quicksort jest algorytmem skonstruowanym techniką
@@ -257,7 +255,6 @@ Quicksort algorytm typu "dziel i zwyciężaj”
 
 ##### Na podstawie:
 [ślusarek wykład 1 prezentacja 03, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234330-prezentacja_03.pdf&embedded=true&chrome=false&dov=1)
-
 ________________________________________________________________________________________
 
 #### 3.5. Algorytm quicksort działa w czasie
@@ -280,7 +277,6 @@ PES(n) = 1/2 n2 + O(n) = T(n2) // gdzie PES(n) oznacza złożoność pesymistycz
 
 ##### Na podstawie:
 [ślusarek wykład 1 prezentacja 02, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234328-prezentacja_02.pdf&embedded=true&chrome=false&dov=1)
-
 ________________________________________________________________________________________
 
 #### 3.6. Algorytmem quicksort sortujemy ciąg 8-elementowy postaci:
@@ -296,12 +292,12 @@ odpowiednio
 ###### (a) 4 i 3 
 
 ##### Uzasadnienie: 
-tablicy z nieparzystą ilością elementów --> L=P=(n−1)/2
-tablicy z nieparzystą ilością elementów --> L=n/2, P=(n/2) - 1
+tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
+
+tablica z nieparzystą ilością elementów --> L=n/2, P=(n/2) - 1
 
 ##### Na podstawie:
 [WWW](https://pl.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/analysis-of-quicksort)
-
 ________________________________________________________________________________________
 
 #### 3.7. Modyfikacja quicksort-u, polegająca na losowaniu elementu dzielącego powoduje, że
@@ -312,13 +308,19 @@ ________________________________________________________________________________
 (e) złożoność algorytmu się zmniejsza
 
 ##### Odpowiedź: 
-######
+###### (c) nigdy nie występuje przypadek pesymistyczny
 
 ##### Uzasadnienie: 
+```
+(a) randomizacja: w każdym podzadaniu, przed przystąpieniem do podziału zawsze na
+początku losuj jeden element i zamień go z lewym elementem. To zapewnia, że wszystkie
+możliwe wielkości podzadań są jednakowo prawdopodobne;  
+
+ --> dodatkowa zaleta: nikt nie jest w stanie skonstruować ciągu który jest na pewno przypadkiem pesymistycznym.  <--
+```
 
 ##### Na podstawie:
-[ślusarek wykład 1 prezentacja 02, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234328-prezentacja_02.pdf&embedded=true&chrome=false&dov=1)
-
+[ślusarek wykład 1 notatki 03, str 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
 ________________________________________________________________________________________
 
 #### 3.8. Złożoność pewnego algorytmu skonstruowanego metodą "dziel i zwyciężaj" jest opisana
@@ -333,11 +335,19 @@ Złożoność tego algorytmu wynosi:
 (e) O(n log(log n))
 
 ##### Odpowiedź: 
-######
+###### (c) O(n log n) 
 
 ##### Uzasadnienie: 
 
-##### Na podstawie:
-[ślusarek wykład 1 prezentacja 02, od slajd 8](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234328-prezentacja_02.pdf&embedded=true&chrome=false&dov=1)
+```
+Rozwiązujemy równanie rekurencyjne na T(n), metodą iteracji:
+T(n) = 2 T(n/2) + n = 2 ( 2 T(n/4) + n/2) + n
+= 2 ( 2 ( 2 T(n/8) + n/4 ) + n/2 ) + n
+= 2 ( . . . 2 ( 2 ( 2 T(1) + 2 ) + 4 ) + . . . ) + n/2 ) + n
+= 2^log(n) * T(1) + n * lg n = n log(n)
+```
 
+##### Na podstawie:
+[ślusarek wykład 1 notatki 03, str 5](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+________________________________________________________________________________________
 ________________________________________________________________________________________
