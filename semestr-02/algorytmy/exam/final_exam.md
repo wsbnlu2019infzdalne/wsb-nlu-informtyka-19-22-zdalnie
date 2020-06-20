@@ -13,7 +13,7 @@ for (i=1; i<=n; i++)
 * (e) Θ(n * log(log n))
 
 ##### Odpowiedź:
-###### * (b) Θ(n log n)
+### * (b) Θ(n log n)
 
 ##### Uzasadnienie:
 Petla zewnętrzna obróci się `n` razy.
@@ -37,7 +37,7 @@ ma złożoność (wybierz najbardziej precyzyjną formułę)
 * (e) O(n log n)
 
 ##### Odpowiedź:
-###### * (a) Θ(n) 
+### * (a) Θ(n) 
 
 ##### Uzasadnienie: 
 Odrzucam **c** i **e** ponieważ jest tylko jedna pętla więc nie mam mowy o iloczynie.
@@ -61,7 +61,7 @@ ________________________________________________________________________________
 * (e) instrukcje, które są zawsze poprawne
 
 ##### Odpowiedź:
-###### * (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
+### * (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
 
 ##### Uzasadnienie: 
 ```
@@ -84,7 +84,7 @@ ________________________________________________________________________________
 * (e) wykonuje najmniej zamian
 
 ##### Odpowiedź: 
-###### * (d) szybko sortuje ciągi prawie posortowane 
+### * (d) szybko sortuje ciągi prawie posortowane 
 
 ##### Uzasadnienie: 
 ```
@@ -105,7 +105,7 @@ ________________________________________________________________________________
 * (e) metoda odporna na błędy przekłamania
 
 ##### Odpowiedź: 
-###### * (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
+### * (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
 
 ##### Uzasadnienie: 
 ```
@@ -125,7 +125,7 @@ ________________________________________________________________________________
 * (e) odporność na przekłamania
 
 ##### Odpowiedź: 
-###### * (c) mała liczba zamian
+### * (c) mała liczba zamian
 
 ##### Uzasadnienie: 
 
@@ -145,7 +145,7 @@ ________________________________________________________________________________
 * (e) metody wstawiania
 
 ##### Odpowiedź: 
-###### * (e) metody wstawiania
+### * (e) metody wstawiania
 
 ##### Uzasadnienie: 
 
@@ -170,7 +170,7 @@ ________________________________________________________________________________
 * (e) żadne z pozostałych
 
 ##### Odpowiedź: 
-###### * (b) duża pamięć robocza
+### * (b) duża pamięć robocza
 
 ##### Uzasadnienie: 
 ```
@@ -190,7 +190,7 @@ ________________________________________________________________________________
 * (e) O(n log(log n))
 
 ##### Odpowiedź: 
-###### * (c) O(n log n) 
+### * (c) O(n log n) 
 
 ##### Uzasadnienie: 
 ```
@@ -220,7 +220,7 @@ wykonaniu funkcji Partition rozmiary lewego i prawego podzadania wynoszą odpowi
 * (e) 0 i 6
 
 ##### Odpowiedź: 
-###### * (b) 3 i 3
+### * (b) 3 i 3
 
 ##### Uzasadnienie: 
 tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
@@ -239,7 +239,7 @@ ________________________________________________________________________________
 * (e) żadną z pozostałych
 
 ##### Odpowiedź: 
-###### * (b) dziel i zwyciężaj
+### * (b) dziel i zwyciężaj
 
 ##### Uzasadnienie:
 ```
@@ -258,7 +258,7 @@ ________________________________________________________________________________
 * (e) Θ(n log n), w najgorszym razie
 
 ##### Odpowiedź: 
-###### * (d) Θ(n2) jeśli wszystkie klucze są jednakowe
+### * (d) Θ(n2) jeśli wszystkie klucze są jednakowe
 
 ##### Uzasadnienie: 
 Własność nr 3: Złożoność pesymistyczna algorytmu quicksort
@@ -280,7 +280,7 @@ odpowiednio
 * (d) 1 i 6
 
 ##### Odpowiedź: 
-###### * (a) 4 i 3 
+### * (a) 4 i 3 
 
 ##### Uzasadnienie: 
 tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
@@ -299,7 +299,7 @@ ________________________________________________________________________________
 * (e) złożoność algorytmu się zmniejsza
 
 ##### Odpowiedź: 
-###### * (c) nigdy nie występuje przypadek pesymistyczny
+### * (c) nigdy nie występuje przypadek pesymistyczny
 
 ##### Uzasadnienie: 
 ```
@@ -326,7 +326,7 @@ Złożoność tego algorytmu wynosi:
 * (e) O(n log(log n))
 
 ##### Odpowiedź: 
-###### * (c) O(n log n) 
+### * (c) O(n log n) 
 
 ##### Uzasadnienie: 
 
@@ -354,7 +354,7 @@ ________________________________________________________________________________
 * (e) listy
 
 ##### Odpowiedź: 
-###### * (c) kolejki priorytetowej 
+### * (c) kolejki priorytetowej 
 
 ##### Uzasadnienie: 
 ```
@@ -376,7 +376,7 @@ przesianie od korzenia w dół) zawartość tablicy jest
 * (e) {7,4,6,1,2,3}
 
 ##### Odpowiedź: 
-###### * (c) {7,6,3,2,4,1} 
+### * (c) {7,6,3,2,4,1} 
 
 ##### Uzasadnienie: 
 kopiec: {1,6,7,2,4,3} --> https://prnt.sc/t329wz
@@ -408,7 +408,7 @@ ________________________________________________________________________________
 * (e) wypisać kopiec w porządku postorder
 
 ##### Odpowiedź: 
-###### * (a) wykonać n razy delete_max()
+### * (a) wykonać n razy delete_max()
 
 ##### Uzasadnienie: 
 Kopiec wielkosci n
@@ -443,7 +443,7 @@ ________________________________________________________________________________
 * (e) żadne z pozostałych
 
 ##### Odpowiedź: 
-###### * (d) pozwalająca usuwać największy element i wstawiać nowe elementy
+### * (d) pozwalająca usuwać największy element i wstawiać nowe elementy
 
 ##### Uzasadnienie: 
 ```
@@ -471,7 +471,7 @@ optymalny rząd złożoności pesymistycznej posiadają
 * (e) tylko 3
 
 ##### Odpowiedź: 
-###### * (c) 1 i 3 
+### * (c) 1 i 3 
 
 ##### Uzasadnienie: 
 ```
@@ -499,7 +499,7 @@ ________________________________________________________________________________
 * (e) tylko 3
 
 ##### Odpowiedź: 
-###### * (e) tylko 3
+### * (e) tylko 3
 
 ##### Uzasadnienie: 
 ```
@@ -522,7 +522,7 @@ wynosi odpowiednio
 * (e) Ω(n log n) i Ω(n loglog n)
 
 ##### Odpowiedź: 
-###### * (a) Ω(n log n) i Ω(n log n)
+### * (a) Ω(n log n) i Ω(n log n)
 
 ##### Uzasadnienie: 
 ```
