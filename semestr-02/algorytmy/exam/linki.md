@@ -64,3 +64,5 @@
 APPENDIX:
     
 #### [Strona do wiuzalizacji kopca](http://btv.melezinek.cz/binary-heap.html)
+
+#### [Zadania egzaminacyjne przykładowe](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-13062020012758-pytania_przykl_2020.pdf&embedded=true&chrome=false&dov=1)
