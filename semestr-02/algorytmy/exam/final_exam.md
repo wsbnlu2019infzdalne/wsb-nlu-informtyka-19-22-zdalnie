@@ -741,7 +741,7 @@ Relax(u, v). Otrzymujemy:
 * (a) błąd - waga krawędzi ujemna 
 * (b) D[u] = 25 
 * (c) D[v] = 27 
-* ### (d) D[v] = 9 
+* ### (d) D[v] = 9 `// D[u] - waga krawedzi(u, v)) czyli 17 -8 = 9` 
 * (e) D[v] = 50
 
 3. W pewnym momencie obliczania najkrótszych ścieżek algorytmem Dijkstry w grafie
