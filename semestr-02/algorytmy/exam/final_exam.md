@@ -7,13 +7,10 @@ for (i=1; i<=n; i++)
         a[i][j]=i+j;
 ```
 * (a) Θ(n) 
-* (b) Θ(n log n) 
+* ### (b) Θ(n log n) 
 * (c) Θ(n^2) 
 * (d) Θ(log n) 
 * (e) Θ(n * log(log n))
-
-##### Odpowiedź:
-### * (b) Θ(n log n)
 
 ##### Uzasadnienie:
 Petla zewnętrzna obróci się `n` razy.
@@ -30,14 +27,11 @@ for (i=1; i<=n; i++)
     a[i]=2*i+1 ;
 ```
 ma złożoność (wybierz najbardziej precyzyjną formułę)
-* (a) Θ(n) 
+* ### (a) Θ(n) 
 * (b) O(n) 
 * (c) Θ(n2) 
 * (d) Ω(n) 
 * (e) O(n log n)
-
-##### Odpowiedź:
-### * (a) Θ(n) 
 
 ##### Uzasadnienie: 
 Odrzucam **c** i **e** ponieważ jest tylko jedna pętla więc nie mam mowy o iloczynie.
@@ -57,11 +51,8 @@ ________________________________________________________________________________
 * (a) instrukcje, które są zawsze wykonywane
 * (b) instrukcje, których jest najwięcej w algorytmie
 * (c) instrukcje rozpoczynające każdą procedurę
-* (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
+* ### (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
 * (e) instrukcje, które są zawsze poprawne
-
-##### Odpowiedź:
-### * (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
 
 ##### Uzasadnienie: 
 ```
@@ -80,11 +71,8 @@ ________________________________________________________________________________
 * (a) jest niestabilne 
 * (b) ma średnią złożoność Θ(n log n)  `// "T" oznaczna złożoność Theta`
 * (c) działa w czasie liniowym 
-* (d) szybko sortuje ciągi prawie posortowane 
+* ### (d) szybko sortuje ciągi prawie posortowane 
 * (e) wykonuje najmniej zamian
-
-##### Odpowiedź: 
-### * (d) szybko sortuje ciągi prawie posortowane 
 
 ##### Uzasadnienie: 
 ```
@@ -101,11 +89,8 @@ ________________________________________________________________________________
 * (a) metoda sortowania oparta na porównaniach kluczy
 * (b) cecha wszystkich algorytmów o złożoności kwadratowej
 * (c) własność metody sortowania przez wybór
-* (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
+* ### (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
 * (e) metoda odporna na błędy przekłamania
-
-##### Odpowiedź: 
-### * (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
 
 ##### Uzasadnienie: 
 ```
@@ -120,12 +105,9 @@ ________________________________________________________________________________
 #### 2.3 Zaletą sortowania metodą wyboru jest 
 * (a) niska złożoność
 * (b) stabilność
-* (c) mała liczba zamian
+* ### (c) mała liczba zamian
 * (d) mała liczba porównań
 * (e) odporność na przekłamania
-
-##### Odpowiedź: 
-### * (c) mała liczba zamian
 
 ##### Uzasadnienie: 
 
@@ -142,14 +124,9 @@ ________________________________________________________________________________
 * (b) najlepiej heapsort lub mergesort
 * (c) quicksort
 * (d) metody wyboru
-* (e) metody wstawiania
-
-##### Odpowiedź: 
-### * (e) metody wstawiania
+* ### (e) metody wstawiania
 
 ##### Uzasadnienie: 
-
-
 ```
 Zalety:
     Stabilność
@@ -164,13 +141,10 @@ ________________________________________________________________________________
 ### 3. Sortowanie metodą "dziel i zwyciężaj"
 #### 3.1 Główną wadą algorytmu mergesort jest
 * (a) duża pesymistyczna złożoność
-* (b) duża pamięć robocza
+* ### (b) duża pamięć robocza
 * (c) niemożność zaprogramowania bez użycia rekurencji
 * (d) niestabilność
 * (e) żadne z pozostałych
-
-##### Odpowiedź: 
-### * (b) duża pamięć robocza
 
 ##### Uzasadnienie: 
 ```
@@ -185,12 +159,9 @@ ________________________________________________________________________________
 #### 3.2. Średnia złożoność algorytmu quicksort wynosi
 * (a) około 0,27 n 
 * (b) około 1,4 log n
-* (c) O(n log n) 
+* ### (c) O(n log n) 
 * (d) O(n2)
 * (e) O(n log(log n))
-
-##### Odpowiedź: 
-### * (c) O(n log n) 
 
 ##### Uzasadnienie: 
 ```
@@ -214,13 +185,10 @@ ________________________________________________________________________________
 #### 3.3. Algorytmem quicksort sortujemy ciąg 7-elementowy postaci: 4, 3, 4, 5, 1, 6, 2. Po pierwszym
 wykonaniu funkcji Partition rozmiary lewego i prawego podzadania wynoszą odpowiednio
 * (a) 4 i 2 
-* (b) 3 i 3
+* ### (b) 3 i 3
 * (c) 2 i 4 
 * (d) 1 i 5
 * (e) 0 i 6
-
-##### Odpowiedź: 
-### * (b) 3 i 3
 
 ##### Uzasadnienie: 
 tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
@@ -233,13 +201,10 @@ ________________________________________________________________________________
 
 #### 3.4. Quicksort jest algorytmem skonstruowanym techniką
 * (a) programowania dynamicznego
-* (b) dziel i zwyciężaj
+* ### (b) dziel i zwyciężaj
 * (c) zachłanną
 * (d) nawrotów * (backtracking)
 * (e) żadną z pozostałych
-
-##### Odpowiedź: 
-### * (b) dziel i zwyciężaj
 
 ##### Uzasadnienie:
 ```
@@ -254,11 +219,8 @@ ________________________________________________________________________________
 * (a) Θ(n), dla niektórych danych wejściowych
 * (b) Θ(n log n) dla danych posortowanych
 * (c) Θ(n log n), w najlepszym razie
-* (d) Θ(n2) jeśli wszystkie klucze są jednakowe
+* ### (d) Θ(n2) jeśli wszystkie klucze są jednakowe
 * (e) Θ(n log n), w najgorszym razie
-
-##### Odpowiedź: 
-### * (d) Θ(n2) jeśli wszystkie klucze są jednakowe
 
 ##### Uzasadnienie: 
 Własność nr 3: Złożoność pesymistyczna algorytmu quicksort
@@ -274,13 +236,10 @@ ________________________________________________________________________________
 4, 3, 4, 4, 4, 5, 5, 5.
 Po pierwszym wykonaniu funkcji Partition rozmiary lewego i prawego podzadania wynoszą
 odpowiednio
-* (a) 4 i 3 
+* ### (a) 4 i 3 
 * (b) 3 i 4
 * (c) 5 i 3 
 * (d) 1 i 6
-
-##### Odpowiedź: 
-### * (a) 4 i 3 
 
 ##### Uzasadnienie: 
 tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
@@ -294,12 +253,9 @@ ________________________________________________________________________________
 #### 3.7. Modyfikacja quicksort-u, polegająca na losowaniu elementu dzielącego powoduje, że
 * (a) jedno podzadanie jest zawsze puste
 * (b) podział jest zawsze na równej wielkości podzadania
-* (c) nigdy nie występuje przypadek pesymistyczny
+* ### (c) nigdy nie występuje przypadek pesymistyczny
 * (d) oczekiwana liczba porównań nie zależy od danych wejściowych
 * (e) złożoność algorytmu się zmniejsza
-
-##### Odpowiedź: 
-### * (c) nigdy nie występuje przypadek pesymistyczny
 
 ##### Uzasadnienie: 
 ```
@@ -321,12 +277,9 @@ równaniem rekurencyjnym:
 Złożoność tego algorytmu wynosi:
 * (a) O(n3) 
 * (b) O(log n)
-* (c) O(n log n) 
+* ### (c) O(n log n) 
 * (d) O(n5)
 * (e) O(n log(log n))
-
-##### Odpowiedź: 
-### * (c) O(n log n) 
 
 ##### Uzasadnienie: 
 
@@ -349,12 +302,9 @@ ________________________________________________________________________________
 #### 4.1 Kopiec to efektywna realizacja
 * (a) stosu 
 * (b) kolejki 
-* (c) kolejki priorytetowej 
+* ### (c) kolejki priorytetowej 
 * (d) słownika 
 * (e) listy
-
-##### Odpowiedź: 
-### * (c) kolejki priorytetowej 
 
 ##### Uzasadnienie: 
 ```
@@ -371,12 +321,9 @@ ________________________________________________________________________________
 przesianie od korzenia w dół) zawartość tablicy jest
 * (a) {1,6,7,2,4,3} 
 * (b) {7,6,1,2,4,3}
-* (c) {7,6,3,2,4,1} 
+* ### (c) {7,6,3,2,4,1} 
 * (d) {7,6,4,3,2,1}
 * (e) {7,4,6,1,2,3}
-
-##### Odpowiedź: 
-### * (c) {7,6,3,2,4,1} 
 
 ##### Uzasadnienie: 
 kopiec: {1,6,7,2,4,3} --> https://prnt.sc/t329wz
@@ -401,14 +348,11 @@ ________________________________________________________________________________
 
 
 #### 4.3 Aby wypisać zawartość kopca w kolejności malejącej należy
-* (a) wykonać n razy delete_max()
+* ### (a) wykonać n razy delete_max()
 * (b) wypisać klucze poziomami, startując od korzenia
 * (c) wypisać kopiec w porządku inorder
 * (d) wypisać kopiec w porządku preorder
 * (e) wypisać kopiec w porządku postorder
-
-##### Odpowiedź: 
-### * (a) wykonać n razy delete_max()
 
 ##### Uzasadnienie: 
 Kopiec wielkosci n
@@ -439,11 +383,8 @@ ________________________________________________________________________________
 * (a) stanowiąca połączenie kolejki i stosu
 * (b) oferująca operacje search, insert, delete
 * (c) będąca posortowaną listą
-* (d) pozwalająca usuwać największy element i wstawiać nowe elementy
+* ### (d) pozwalająca usuwać największy element i wstawiać nowe elementy
 * (e) żadne z pozostałych
-
-##### Odpowiedź: 
-### * (d) pozwalająca usuwać największy element i wstawiać nowe elementy
 
 ##### Uzasadnienie: 
 ```
@@ -466,12 +407,9 @@ ________________________________________________________________________________
 optymalny rząd złożoności pesymistycznej posiadają
 * (a) 2 i 3 
 * (b) wszystkie
-* (c) 1 i 3 
+* ### (c) 1 i 3 
 * (d) tylko 1.
 * (e) tylko 3
-
-##### Odpowiedź: 
-### * (c) 1 i 3 
 
 ##### Uzasadnienie: 
 ```
@@ -496,10 +434,7 @@ ________________________________________________________________________________
 * (b) 1 i 3
 * (c) tylko 1 
 * (d) żadna.
-* (e) tylko 3
-
-##### Odpowiedź: 
-### * (e) tylko 3
+* ### (e) tylko 3
 
 ##### Uzasadnienie: 
 ```
@@ -515,14 +450,11 @@ ________________________________________________________________________________
 
 #### 4.7 Dolne ograniczenie na złożoność pesymistyczną i średnią sortowania przez porównania kluczy
 wynosi odpowiednio
-* (a) Ω(n log n) i Ω(n log n)
+* ### (a) Ω(n log n) i Ω(n log n)
 * (b) Ω(n log n) i Ω(log n)
 * (c) Ω(n log n) i Ω(n)
 * (d) Ω(n2) i Ω(n log n)
 * (e) Ω(n log n) i Ω(n loglog n)
-
-##### Odpowiedź: 
-### * (a) Ω(n log n) i Ω(n log n)
 
 ##### Uzasadnienie: 
 ```
