@@ -1,3 +1,5 @@
+
+
 ### 1. Podstawy analizy alorytmów. 
 #### 1.1 Jaka jest złożoność poniższego fragmentu programu?
 
@@ -328,11 +330,11 @@ równaniem rekurencyjnym:
 T(1) = 1
 T(n) = 2T(n/2) + 3n, dla n>1.
 Złożoność tego algorytmu wynosi:
-(a) O(n3) 
-(b) O(log n)
-(c) O(n log n) 
-(d) O(n5)
-(e) O(n log(log n))
+* (a) O(n3) 
+* (b) O(log n)
+* (c) O(n log n) 
+* (d) O(n5)
+* (e) O(n log(log n))
 
 ##### Odpowiedź: 
 ###### (c) O(n log n) 
@@ -351,4 +353,197 @@ n log(n) dla quick sorta oraz dla sortowania przez scalanie
 ##### Na podstawie:
 [ślusarek wykład 1 notatki 03, str 5](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
 ________________________________________________________________________________________
+________________________________________________________________________________________
+
+### 4. Kopiec
+
+#### 4.1 Kopiec to efektywna realizacja
+* (a) stosu 
+* (b) kolejki 
+* (c) kolejki priorytetowej 
+* (d) słownika 
+* (e) listy
+
+##### Odpowiedź: 
+###### (c) kolejki priorytetowej 
+
+##### Uzasadnienie: 
+```
+Kopiec (stóg) (ang. heap)
+• struktura służąca do realizacji kolejki priorytetowej, czyli struktury z
+operacjami:
+```
+
+##### Na podstawie:
+[ślusarek wykład 2 prezentacja 04, slide 2](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+________________________________________________________________________________________
+
+#### 4.2 Zawartość tablicy a[1]...a[6] to {1,6,7,2,4,3}. W rezultacie wykonania 'downheap(a,1,6)' (czyli
+przesianie od korzenia w dół) zawartość tablicy jest
+* (a) {1,6,7,2,4,3} 
+* (b) {7,6,1,2,4,3}
+* (c) {7,6,3,2,4,1} 
+* (d) {7,6,4,3,2,1}
+* (e) {7,4,6,1,2,3}
+
+##### Odpowiedź: 
+###### (c) {7,6,3,2,4,1} 
+
+##### Uzasadnienie: 
+kopiec: {1,6,7,2,4,3} --> https://prnt.sc/t329wz
+operacja heapdown - Teta(log(n))
+```
+Na każdym poziomie dwa porównania: wybór większego z następników oraz porównanie z
+poprzednikiem. 
+
+Nawigacja w kopcu – bardzo łatwa:
+• poprzednikiem a[i] jest a[  i/2 ],
+• lewym następnikiem a[i] jest a[ 2*i ],
+• prawym następnikiem a[i] jest a[ 2*i+1 ].
+```
+[1] L = 6 < P=7, zamiana 1 z 7
+[2] L = 3, P brak, zamiana 1 z 3 
+koniec a = {7, 6, 3, 2, 4, 1}
+
+##### Na podstawie:
+[WWW](hhttps://webdocs.cs.ualberta.ca/~holte/T26/heap-sift-down.html)
+[strona do wiuzalizacji kopca](http://btv.melezinek.cz/binary-heap.html)
+________________________________________________________________________________________
+
+
+#### 4.3 Aby wypisać zawartość kopca w kolejności malejącej należy
+* (a) wykonać n razy delete_max()
+* (b) wypisać klucze poziomami, startując od korzenia
+* (c) wypisać kopiec w porządku inorder
+* (d) wypisać kopiec w porządku preorder
+* (e) wypisać kopiec w porządku postorder
+
+##### Odpowiedź: 
+###### (a) wykonać n razy delete_max()
+
+##### Uzasadnienie: 
+Kopiec wielkosci n
+
+przykąłdowy wykonie mógłby wyglądac tak:
+[1]
+* wypisanie korzenia
+* zamiana korzenia z ostatnim elementem kopca i usunięcie ostatniego elementu przez n--
+* downheap 
+[2]
+* wypisanie korzenia
+* zamiana korzenia z ostatnim elementem kopca i usunięcie ostatniego elementu przez n--
+* downheap 
+
+  .......
+  
+[n]
+* wypisanie korzenia
+* korzenia przez n--
+  
+##### Na podstawie:
+[ślusarek wykład 2 notatki 04, str 3](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+
+________________________________________________________________________________________
+
+
+#### 4.4 Kolejka priorytetowa to struktura danych
+* (a) stanowiąca połączenie kolejki i stosu
+* (b) oferująca operacje search, insert, delete
+* (c) będąca posortowaną listą
+* (d) pozwalająca usuwać największy element i wstawiać nowe elementy
+* (e) żadne z pozostałych
+
+##### Odpowiedź: 
+###### (d) pozwalająca usuwać największy element i wstawiać nowe elementy
+
+##### Uzasadnienie: 
+```
+Kopiec to struktura służąca do realizacji kolejki priorytetowej, czyli struktury danych z
+operacjami:
+- --> insert (Q, e) wstaw element e do kolejki Q <--
+- max (Q) podaj wartość największego elementu w kolejce Q
+- --> deletemax (Q) usuń największy element z kolejki Q <--
+```
+
+##### Na podstawie:
+[ślusarek wykład 2 notatki 04, str 1](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+________________________________________________________________________________________
+
+
+#### 4.5 Spośród następujących metod (w klasie algorytmów sortujących przez porównania):
+1. heapsort (metoda kopca),
+2. quicksort,
+3. mergesort (scalanie),
+optymalny rząd złożoności pesymistycznej posiadają
+* (a) 2 i 3 
+* (b) wszystkie
+* (c) 1 i 3 
+* (d) tylko 1.
+* (e) tylko 3
+
+##### Odpowiedź: 
+###### (c) 1 i 3 
+
+##### Uzasadnienie: 
+```
+Podsumowanie. Pod względem liczby wykonywanych porównań:
+• Mergesort jest optymalny (z dokładnością do składnika wielkości O(n)) w przypadku
+pesymistycznym i średnim
+• Quicksort w przypadku średnim jest ok. 1.4 razy gorszy niż optimum; >>> w przypadku
+pesymistycznym ma rząd złożoności taki jak proste algorytmy sortowania: Θ(n2) <<<
+• Heapsort jest w przypadku pesymistycznym i średnim około 2 razy gorszy niż optimum.
+```
+
+##### Na podstawie:
+[ślusarek wykład 2 notatki 04, str 5](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+________________________________________________________________________________________
+
+
+#### 4.6 Które spośród tych metod sortowania są stabilne?
+1 - heapsort
+2 - quicksort,
+3 - countsort (metoda zliczania)
+(a) wszystkie, 
+(b) 1 i 3
+(c) tylko 1 
+(d) żadna.
+(e) tylko 3
+
+##### Odpowiedź: 
+###### (e) tylko 3
+
+##### Uzasadnienie: 
+```
+Podobnie jak quicksort, heapsort jest niestabilny.
+```
+WIKIPEDIA: "gwarantuje stabilność i nie wymaga dodatkowego założenia. Potrzebuje natomiast O(n) dodatkowej pamięci"
+
+
+##### Na podstawie:
+[ślusarek wykład 1 notatki 03, str 5](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
+[WIKI: sortowanie przez zliczanie](https://pl.wikipedia.org/wiki/Sortowanie_przez_zliczanie)
+________________________________________________________________________________________
+
+#### 4.7 Dolne ograniczenie na złożoność pesymistyczną i średnią sortowania przez porównania kluczy
+wynosi odpowiednio
+* (a) OMG(n log n) i OMG(n log n)
+* (b) OMG(n log n) i OMG(log n)
+* (c) OMG(n log n) i OMG(n)
+* (d) OMG(n2) i OMG(n log n)
+* (e) OMG(n log n) i OMG(n loglog n)
+
+##### Odpowiedź: 
+###### (a) OMG(n log n) i OMG(n log n)
+
+##### Uzasadnienie: 
+```
+Twierdzenie 2: Każdy algorytm sortujący metodą porównań w przypadku
+średnim wykonuje co najmniej n lg n porównań.
+
+A zatem, w modelu drzew decyzyjnych, dolne ograniczenie na złożoność
+średnią jest takie samo jak dla złożoności pesymistycznej.
+```
+
+##### Na podstawie:
+[ślusarek wykład 2 prezentacja 04, slajd 15](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-22032020175143-prezentacja_04.pdf&embedded=true&chrome=false&dov=1)
 ________________________________________________________________________________________
