@@ -50,7 +50,7 @@
     * Sortowanie topologiczne acyklicznego grafu skierowanego (Θ(n+m))
     
 #### Najkrótsze ścieżki: [prezentacja 12](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-13062020012618-prezentacja_12.pdf&embedded=true&chrome=false&dov=1), [notatki 12](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-13062020012617-notatki_12.pdf&embedded=true&chrome=false&dov=1)
-    * Metoda ogólna
+    * Metoda ogólna, funkcja Relax
     * Algorytm B-F (Bellman, Ford)
     * Algorytm DIJ (Dijkstra)
     

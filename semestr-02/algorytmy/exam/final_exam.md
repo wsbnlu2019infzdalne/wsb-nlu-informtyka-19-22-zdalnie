@@ -1,5 +1,3 @@
-
-
 ### 1. Podstawy analizy alorytmów. 
 #### 1.1 Jaka jest złożoność poniższego fragmentu programu?
 
@@ -8,16 +6,14 @@ for (i=1; i<=n; i++)
     for (j=n; j>1;j=j/2) 
         a[i][j]=i+j;
 ```
-* (a) T(n) 
-* (b) T(n log n) 
-* (c) T(n^2) 
-* (d) T(log n) 
-* (e) T(n * log(log n))
-
-##### Gdzie "T" oznaczna złożoność Theta
+* (a) Θ(n) 
+* (b) Θ(n log n) 
+* (c) Θ(n^2) 
+* (d) Θ(log n) 
+* (e) Θ(n * log(log n))
 
 ##### Odpowiedź:
-###### (b) T(n log n)
+###### * (b) Θ(n log n)
 
 ##### Uzasadnienie:
 Petla zewnętrzna obróci się `n` razy.
@@ -37,7 +33,7 @@ ma złożoność (wybierz najbardziej precyzyjną formułę)
 * (a) T(n) 
 * (b) O(n) 
 * (c) T(n2) 
-* (d) OMG(n) 
+* (d) Ω(n) 
 * (e) O(n log n)
 
 ##### Gdzie 
@@ -46,36 +42,36 @@ ma złożoność (wybierz najbardziej precyzyjną formułę)
 * "OMG" oznaczna złożoność Omega
 
 ##### Odpowiedź:
-###### (a) T(n) 
+###### * (a) T(n) 
 
 ##### Uzasadnienie: 
 Odrzucam **c** i **e** ponieważ jest tylko jedna pętla więc nie mam mowy o iloczynie.
 O(n) oszacowana od góry z założenia 
 , prawa granica przestrzeni funkcji.
-OMG(n) jest z załozenia niedoszacowana, lewa granica .
+Ω(n) jest z załozenia niedoszacowana, lewa granica .
 
 
 T(n) będzię więc najlepszą odpowiedzią bo znajduje sie w przestrzeni pomiędzy 
-OMG(n) < T(n) < O(n). 
+Ω(n) < T(n) < O(n). 
 
 ##### Na podstawie:
 [ślusarek wykład 1 prezentacja 01, od slajd 6 ](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-prezentacja_01.pdf&embedded=true&chrome=false&dov=1)
 ________________________________________________________________________________________
 
 #### 1.3 Instrukcje dominujące w algorytmie, to
-(a) instrukcje, które są zawsze wykonywane
-(b) instrukcje, których jest najwięcej w algorytmie
-(c) instrukcje rozpoczynające każdą procedurę
-(d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
-(e) instrukcje, które są zawsze poprawne
+* (a) instrukcje, które są zawsze wykonywane
+* (b) instrukcje, których jest najwięcej w algorytmie
+* (c) instrukcje rozpoczynające każdą procedurę
+* (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
+* (e) instrukcje, które są zawsze poprawne
 
 ##### Odpowiedź:
-###### (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
+###### * (d) instrukcje, których liczba wykonań decyduje o rzędzie złożoności
 
 ##### Uzasadnienie: 
 ```
 Instrukcje dominujące w algorytmie to takie, że liczba wszystkich
-wykonywanych instrukcji elementarnych jest proporcjonalna do t(d).
+wykonywanych instrukcji elementarnych jest proporcjonalna do t* (d).
 ```
 
 ##### Na podstawie:
@@ -93,7 +89,7 @@ ________________________________________________________________________________
 * (e) wykonuje najmniej zamian
 
 ##### Odpowiedź: 
-###### (d) szybko sortuje ciągi prawie posortowane 
+###### * (d) szybko sortuje ciągi prawie posortowane 
 
 ##### Uzasadnienie: 
 ```
@@ -114,7 +110,7 @@ ________________________________________________________________________________
 * (e) metoda odporna na błędy przekłamania
 
 ##### Odpowiedź: 
-###### (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
+###### * (d) zachowywanie wzajemnego uporządkowania kluczy jednakowych
 
 ##### Uzasadnienie: 
 ```
@@ -134,7 +130,7 @@ ________________________________________________________________________________
 * (e) odporność na przekłamania
 
 ##### Odpowiedź: 
-###### (c) mała liczba zamian
+###### * (c) mała liczba zamian
 
 ##### Uzasadnienie: 
 
@@ -154,7 +150,7 @@ ________________________________________________________________________________
 * (e) metody wstawiania
 
 ##### Odpowiedź: 
-###### (e) metody wstawiania
+###### * (e) metody wstawiania
 
 ##### Uzasadnienie: 
 
@@ -179,7 +175,7 @@ ________________________________________________________________________________
 * (e) żadne z pozostałych
 
 ##### Odpowiedź: 
-###### (b) duża pamięć robocza
+###### * (b) duża pamięć robocza
 
 ##### Uzasadnienie: 
 ```
@@ -199,12 +195,12 @@ ________________________________________________________________________________
 * (e) O(n log(log n))
 
 ##### Odpowiedź: 
-###### (c) O(n log n) 
+###### * (c) O(n log n) 
 
 ##### Uzasadnienie: 
 ```
 Ważna własność nr 4: A(n) ≈ 1.4 n lg n
-(dowód dość trudny, np. z wykorzystaniem liczb harmonicznych).
+* (dowód dość trudny, np. z wykorzystaniem liczb harmonicznych).
 Można wykazać, że odchylenie standardowe od wartości oczekiwanej wynosi około 0.27 * n,
 zatem jest bardzo małe (liniowego rzędu, gdy tymczasem wartość oczekiwana jest rzędu n log n). Wniosek:
 
@@ -222,14 +218,14 @@ ________________________________________________________________________________
 
 #### 3.3. Algorytmem quicksort sortujemy ciąg 7-elementowy postaci: 4, 3, 4, 5, 1, 6, 2. Po pierwszym
 wykonaniu funkcji Partition rozmiary lewego i prawego podzadania wynoszą odpowiednio
-(a) 4 i 2 
-(b) 3 i 3
-(c) 2 i 4 
-(d) 1 i 5
-(e) 0 i 6
+* (a) 4 i 2 
+* (b) 3 i 3
+* (c) 2 i 4 
+* (d) 1 i 5
+* (e) 0 i 6
 
 ##### Odpowiedź: 
-###### (b) 3 i 3
+###### * (b) 3 i 3
 
 ##### Uzasadnienie: 
 tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
@@ -241,14 +237,14 @@ tablica z nieparzystą ilością elementów --> L=n/2, P=(n/2) - 1
 ________________________________________________________________________________________
 
 #### 3.4. Quicksort jest algorytmem skonstruowanym techniką
-(a) programowania dynamicznego
-(b) dziel i zwyciężaj
-(c) zachłanną
-(d) nawrotów (backtracking)
-(e) żadną z pozostałych
+* (a) programowania dynamicznego
+* (b) dziel i zwyciężaj
+* (c) zachłanną
+* (d) nawrotów * (backtracking)
+* (e) żadną z pozostałych
 
 ##### Odpowiedź: 
-###### (b) dziel i zwyciężaj
+###### * (b) dziel i zwyciężaj
 
 ##### Uzasadnienie:
 ```
@@ -269,7 +265,7 @@ ________________________________________________________________________________
 ##### Gdzie "T" oznaczna złożoność Theta
 
 ##### Odpowiedź: 
-###### (d) T(n2) jeśli wszystkie klucze są jednakowe
+###### * (d) T(n2) jeśli wszystkie klucze są jednakowe
 
 ##### Uzasadnienie: 
 Własność nr 3: Złożoność pesymistyczna algorytmu quicksort
@@ -291,7 +287,7 @@ odpowiednio
 * (d) 1 i 6
 
 ##### Odpowiedź: 
-###### (a) 4 i 3 
+###### * (a) 4 i 3 
 
 ##### Uzasadnienie: 
 tablica z nieparzystą ilością elementów --> L=P=(n−1)/2
@@ -303,18 +299,18 @@ tablica z nieparzystą ilością elementów --> L=n/2, P=(n/2) - 1
 ________________________________________________________________________________________
 
 #### 3.7. Modyfikacja quicksort-u, polegająca na losowaniu elementu dzielącego powoduje, że
-(a) jedno podzadanie jest zawsze puste
-(b) podział jest zawsze na równej wielkości podzadania
-(c) nigdy nie występuje przypadek pesymistyczny
-(d) oczekiwana liczba porównań nie zależy od danych wejściowych
-(e) złożoność algorytmu się zmniejsza
+* (a) jedno podzadanie jest zawsze puste
+* (b) podział jest zawsze na równej wielkości podzadania
+* (c) nigdy nie występuje przypadek pesymistyczny
+* (d) oczekiwana liczba porównań nie zależy od danych wejściowych
+* (e) złożoność algorytmu się zmniejsza
 
 ##### Odpowiedź: 
-###### (c) nigdy nie występuje przypadek pesymistyczny
+###### * (c) nigdy nie występuje przypadek pesymistyczny
 
 ##### Uzasadnienie: 
 ```
-(a) randomizacja: w każdym podzadaniu, przed przystąpieniem do podziału zawsze na
+* (a) randomizacja: w każdym podzadaniu, przed przystąpieniem do podziału zawsze na
 początku losuj jeden element i zamień go z lewym elementem. To zapewnia, że wszystkie
 możliwe wielkości podzadań są jednakowo prawdopodobne;  
 
@@ -337,7 +333,7 @@ Złożoność tego algorytmu wynosi:
 * (e) O(n log(log n))
 
 ##### Odpowiedź: 
-###### (c) O(n log n) 
+###### * (c) O(n log n) 
 
 ##### Uzasadnienie: 
 
@@ -365,11 +361,11 @@ ________________________________________________________________________________
 * (e) listy
 
 ##### Odpowiedź: 
-###### (c) kolejki priorytetowej 
+###### * (c) kolejki priorytetowej 
 
 ##### Uzasadnienie: 
 ```
-Kopiec (stóg) (ang. heap)
+Kopiec (stóg) * (ang. heap)
 • struktura służąca do realizacji kolejki priorytetowej, czyli struktury z
 operacjami:
 ```
@@ -378,7 +374,7 @@ operacjami:
 [ślusarek wykład 2 prezentacja 04, slide 2](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-06032020234329-notatki_03.pdf&embedded=true&chrome=false&dov=1)
 ________________________________________________________________________________________
 
-#### 4.2 Zawartość tablicy a[1]...a[6] to {1,6,7,2,4,3}. W rezultacie wykonania 'downheap(a,1,6)' (czyli
+#### 4.2 Zawartość tablicy a[1]...a[6] to {1,6,7,2,4,3}. W rezultacie wykonania 'downheap* (a,1,6)' * (czyli
 przesianie od korzenia w dół) zawartość tablicy jest
 * (a) {1,6,7,2,4,3} 
 * (b) {7,6,1,2,4,3}
@@ -387,7 +383,7 @@ przesianie od korzenia w dół) zawartość tablicy jest
 * (e) {7,4,6,1,2,3}
 
 ##### Odpowiedź: 
-###### (c) {7,6,3,2,4,1} 
+###### * (c) {7,6,3,2,4,1} 
 
 ##### Uzasadnienie: 
 kopiec: {1,6,7,2,4,3} --> https://prnt.sc/t329wz
@@ -419,7 +415,7 @@ ________________________________________________________________________________
 * (e) wypisać kopiec w porządku postorder
 
 ##### Odpowiedź: 
-###### (a) wykonać n razy delete_max()
+###### * (a) wykonać n razy delete_max()
 
 ##### Uzasadnienie: 
 Kopiec wielkosci n
@@ -454,7 +450,7 @@ ________________________________________________________________________________
 * (e) żadne z pozostałych
 
 ##### Odpowiedź: 
-###### (d) pozwalająca usuwać największy element i wstawiać nowe elementy
+###### * (d) pozwalająca usuwać największy element i wstawiać nowe elementy
 
 ##### Uzasadnienie: 
 ```
@@ -482,7 +478,7 @@ optymalny rząd złożoności pesymistycznej posiadają
 * (e) tylko 3
 
 ##### Odpowiedź: 
-###### (c) 1 i 3 
+###### * (c) 1 i 3 
 
 ##### Uzasadnienie: 
 ```
@@ -503,14 +499,14 @@ ________________________________________________________________________________
 1 - heapsort
 2 - quicksort,
 3 - countsort (metoda zliczania)
-(a) wszystkie, 
-(b) 1 i 3
-(c) tylko 1 
-(d) żadna.
-(e) tylko 3
+* (a) wszystkie, 
+* (b) 1 i 3
+* (c) tylko 1 
+* (d) żadna.
+* (e) tylko 3
 
 ##### Odpowiedź: 
-###### (e) tylko 3
+###### * (e) tylko 3
 
 ##### Uzasadnienie: 
 ```
@@ -526,14 +522,14 @@ ________________________________________________________________________________
 
 #### 4.7 Dolne ograniczenie na złożoność pesymistyczną i średnią sortowania przez porównania kluczy
 wynosi odpowiednio
-* (a) OMG(n log n) i OMG(n log n)
-* (b) OMG(n log n) i OMG(log n)
-* (c) OMG(n log n) i OMG(n)
-* (d) OMG(n2) i OMG(n log n)
-* (e) OMG(n log n) i OMG(n loglog n)
+* (a) Ω(n log n) i Ω(n log n)
+* (b) Ω(n log n) i Ω(log n)
+* (c) Ω(n log n) i Ω(n)
+* (d) Ω(n2) i Ω(n log n)
+* (e) Ω(n log n) i Ω(n loglog n)
 
 ##### Odpowiedź: 
-###### (a) OMG(n log n) i OMG(n log n)
+###### * (a) Ω(n log n) i Ω(n log n)
 
 ##### Uzasadnienie: 
 ```
@@ -547,3 +543,333 @@ A zatem, w modelu drzew decyzyjnych, dolne ograniczenie na złożoność
 ##### Na podstawie:
 [ślusarek wykład 2 prezentacja 04, slajd 15](https://docs.google.com/viewer?url=https%3A%2F%2Fwsb-nlu.clouda.edu.pl%2FContent%2Fpliki%2FmaterialyJednostka%2Fslusarek-22032020175143-prezentacja_04.pdf&embedded=true&chrome=false&dov=1)
 ________________________________________________________________________________________
+________________________________________________________________________________________
+
+## Nie opracowane:
+
+### 5. Metody pozycyjne sortowania
+
+1. Złożoność pesymistyczna sortowania przez zliczanie * (countsort)
+* ##### (a) jest liniowa względem liczby elementów i zakresu wartości kluczy
+* (b) jest optymalna i wynosi Θ(n log n)
+* (c) jest rzędu kwadratowego
+* (d) nie zależy od wartości kluczy
+* (e) jest rzędu n loglog n
+
+2. Złożoność sortowania metodą zliczania n kluczy o wartościach z przedziału [0..m-1] wynosi
+* (a) Θ(n log n) 
+* (b) Θ(n m)
+* (c) Θ(n2) 
+* ##### (d) Θ(n+m)
+* (e) Θ(n loglog n)
+
+3. Złożoność pamięciowa sortowania metodą zliczania n kluczy o wartościach z przedziału [0..m-
+1] wynosi
+* (a) Θ(n) 
+* (b) Θ(n m)
+* (c) Θ(m) 
+* ##### (d) Θ(n+m)
+* (e) Θ(n2)
+
+4. Po pierwszej z trzech faz algorytmu radixsort dla tablicy trzycyfrowych kluczy
+{(1,2,4),(2,2,2),(1,1,4),(4,4,1)}
+klucz (1,2,4) będzie w kolejności na miejscu (licząc od zera)
+* (a) 0 
+* (b) 1
+* ##### (c) 2 
+* (d) 3
+* (e) 2 lub 3
+________________________________________________________________________________________
+
+### 7. Wyszukiwanie w tablicy
+
+1. Oczekiwana liczba iteracji podczas wyszukiwania interpolacyjnego w tablicy 1 000 000 -
+elementowej wynosi około:
+* (a) 500 000 
+* (b) 100 000 
+* ##### (c) 5 
+* (d) 20 
+* (e) 100
+
+2. Złożoność pesymistyczna i średnia wyszukiwania połówkowego "bisekcja – 1 porównanie"
+wynosi odpowiednio:
+* (a) Θ(n) i Θ(log n)
+* ##### (b) Θ(log n) i Θ(log n)
+* (c) Θ(n) i Θ(log log n)
+* (d) Θ(log n) i Θ(n)
+* (e) Θ(log n) i Θ(log log n)
+
+3. Szukamy X=1000 w tablicy A[1000], posortowanej rosnąco, z wartościami na końcach 0 i
+10000. Metoda interpolacyjna w pierwszym kroku porówna X z elementem A[p], p w przybliżeniu
+równa się
+* (a) 1 
+* (b) 50
+* ##### (c) 100 
+* (d) 1000
+* (e) 900
+
+4. Oczekiwana liczba porównań dla wyszukiwania algorytmem "bisekcja 1 porównanie" (w
+tablicy długości 64000 dla metody połówkowej oraz interpolacyjnej wynosi odpowiednio (około)
+* ##### (a) 16 i 4 
+* (b) 16 i 16
+* (c) 32000 i 16
+* (d) 4 i 16
+* (e) 32000 i 4
+
+5. Zawartość tablicy a[0..8] to {1,3,5,5,5,5,10,10,13}. Wyszukujemy metodą połówkową
+* (binsearch - lowerbound) wartości X=4. W wyniku otrzymujemy indeks:
+* (a) 4 
+* ##### (b) 2 
+* (c) 3 
+* (d) 5 
+* (e) 6
+________________________________________________________________________________________
+
+
+### 8. Drzewa BST
+1. Do początkowo pustego drzewa BST wstawiamy kolejno 8, 16, 10, 5, 2 Poprzednikiem
+węzła 10 jest:
+* (a) żaden – 10 jest korzeniem 
+* ##### (b) 16 
+* (c) 10 
+* (d) 5 
+* (e) 2
+
+2. Aby otrzymać zawartość drzewa BST w kolejności rosnącej należy przeglądnąć drzewo w
+porządku 
+* (a) preorder 
+* ##### (b) inorder 
+* (c) postorder 
+* (d) DFS 
+* (e) BFS
+
+3. Dla początkowo pustego drzewa BST wykonujemy n operacji wstawienia, dla kluczy równych
+1, 2, ... , n, w tej kolejności. W sumie wszystkie operacje kosztują
+* (a) Θ(n) 
+* (b) Θ(log n)
+* ##### (c) Θ(n2) 
+* (d) Θ(n log n) 
+* (e) Θ(n loglog n)
+
+4. Do początkowo pustego drzewa BST wstawiamy kolejno 10, 5, 12, 8, 3. Poprzednikiem węzła
+8 w tak skonstruowanym drzewie jest:
+* (a) żaden (8 jest korzeniem) 
+* (b) 12 
+* (c) 10 
+* ##### (d) 5 
+* (e) 3
+
+5. Do początkowo pustego drzewa BST wstawiamy n różnych kluczy, w losowej kolejności.
+Złożoności pesymistyczna i średnia całego ciągu operacji wynoszą odpowiednio
+* (a) Θ(n) i Θ(n) 
+* (b) Θ(n2) i Θ(n)
+* ##### (c) Θ(n2) i Θ(n log n) 
+* (d) Θ(n log n) i Θ(n log n)
+* (e) Θ(n2) i Θ(n2)
+
+6. W n-wierzchołkowym drzewie BST reprezentowanym w standardowy sposób za pomocą
+wskaźników liczba pustych wskaźników (NULL) we wszystkich wierzchołkach wynosi
+* (a) n-1 
+* (b) n 
+* ##### (c) n+1 
+* (d) 2n+1 
+* (e) 2n - 1
+
+________________________________________________________________________________________
+
+### 10. Haszowanie
+1. W haszowaniu, "kolizja" oznacza, że
+* (a) w słowniku mogą być elementy o jednakowej wartości funkcji haszującej
+* (b) wartość funkcji haszującej wypada poza zakres tablicy
+* ##### (c) w słowniku są elementy o jednakowej wartości funkcji haszującej
+* (d) zabrakło pamięci aby wstawić kolejny element
+* (e) żadne z pozostałych
+
+2. Obsługa kolizji jest przez adresowanie liniowe.
+Funkcja haszująca ma postać: h(x)=x mod 6. Wstawiono kolejno 10, 18, 13, 23, 17. Klucz 17 jest
+na pozycji
+* (a) 4 
+* (b) 5 
+* (c) 0 
+* ##### (d) 2 
+* (e) 3
+
+3. Obsługa kolizji jest przez wtórną funkcję haszującą.
+Funkcja haszująca (pierwotna): h(x)=x mod 7; wtórna: g(x) = 6 – x mod 5.
+Wstawiono kolejno 9, 19, 23. Klucz 23 jest na pozycji
+* (a) 0 
+* ##### (b) 1 
+* (c) 4 
+* (d) 3 
+* (e) 6
+4. Jaka jest średnia złożoność wyszukiwania klucza w tablicy haszowanej, w dowolnej z
+poznanych metod usuwania kolizji (zakładając nie większe niż 50% wypełnienie):
+* (a) Θ(log n) 
+* ##### (b) stała 
+* (c) Θ(log log n) 
+* (d) Θ(n) 
+* (e) Θ(n log n)
+
+5. Przepis pierwotnej funkcji haszującej to h(x)=x mod 7;
+wtórnej h'(x) = 4 – x mod 4.
+Wstawiono kolejno 9, 18, 30. Klucz 30 jest na pozycji
+* (a) 0 
+* (b) 2 
+* (c) 4 
+* ##### (d) 6
+* (e) 1
+
+6. W metodzie haszowania operacja usuwania elementu jest realizowalna efektywnie
+* (a) w każdej z metod usuwania kolizji
+* (b) w metodzie haszowania podwójnego
+* ##### (c) w metodzie łańcuchowania
+* (d) w żadnej z metod
+* (e) w metodzie adresacji liniowej
+________________________________________________________________________________________
+
+
+### 11. Przegląd grafu
+1. Algorytm przeglądu grafu w głąb jest przykładem konstrukcji opartej na technice
+* (a) zachłannej 
+* ##### (b) nawrotów * (backtracking) 
+* (c) programowania dynamicznego
+* (d) dziel i zwyciężaj 
+* (e) połówkowej
+
+2. Algorytmy BFS i DFS oparte są na wykorzystaniu, odpowiednio, następujących struktur
+danych:
+* (a) stosu, stosu
+* (b) kolejki, kolejki
+* ##### (c) kolejki, stosu
+* (d) kolejki priorytetowej, kolejki
+* (e) stosu, kolejki priorytetowej
+
+3. Koszt pamięciowy reprezentacji grafu G=(V,E), V=n,E=m, za pomocą tablicy sąsiedztwa
+oraz list następników wynosi odpowiednio
+* (a) O(n2) i O(nm) 
+* (b) O(n+m) i O(n2)
+* ##### (c) O(n2) i O(n+m) 
+* (d) O(n) i O(m)
+* (e) O(n+m) i O(n m)
+
+4. Sortowanie topologiczne acyklicznego grafu zorientowanego można obliczyć
+* (a) przeglądając BFS i obliczając odległości
+* (b) przeglądając DFS i porządkując rosnąco numerami postorder f[v]
+* (c) przeglądając DFS i porządkując rosnąco numerami preorder d[v]
+* ##### (d) przeglądając DFS i porządkując malejąco numerami postorder f[v]
+* (e) przeglądając BFS i obliczając głębokości
+
+5. Najszybsza metoda obliczania odległości pomiędzy dwoma ustalonymi wierzchołkami
+spójnego niezorientowanego grafu (wagi krawędzi równe 1) to
+* (a) algorytm Dijkstry
+* (b) algorytm Forda-Bellmana,
+* ##### (c) algorytm BFS
+* (d) algorytm DFS z numeracją f[v]
+* (e) algorytm DFS z numeracją d[v]
+
+6. Spośród wszystkich możliwych drzew rozpinających o ustalonym korzeniu s dla grafu
+niezorientowanego G, drzewo BFS
+* (a) jest najwyższe
+* ##### (b) jest najniższe
+* (c) ma na ogół mniejszą liczbę krawędzi niż inne drzewa
+* (d) ma na ogół większą liczbę krawędzi niż inne drzewa
+* (e) żadna z pozostałych odpowiedzi
+
+7. Aby sprawdzić czy graf zorientowany jest acykliczny
+* (a) stosujemy BFS i sprawdzamy krawędzie poprzeczne
+* (b) stosujemy DFS i sprawdzamy krawędzie poprzeczne
+* ##### (c) stosujemy DFS i sprawdzamy krawędzie wsteczne
+* (d) stosujemy BFS i sprawdzamy stopnie wierzchołków
+* (e) stosujemy BFS i sprawdzamy krawędzie wzfdłużne
+
+8. Spójne składowe dowolnego grafu niezorientowanego można obliczyć w czasie
+* ##### (a) O(n+m) 
+* (b) O(n) 
+* (c) O(n m) 
+* (d) O(n2) 
+* (e) O(n2m)
+
+9. Najlepszy czas w jakim można posortować graf topologicznie jest rzędu dokładnie
+* ##### (a) n+m 
+* (b) n log n 
+* (c) m log m 
+* (d) n2
+* (e) loglog n
+________________________________________________________________________________________
+
+
+### 12. Najkrótsze ścieżki
+1. Zbiór wierzchołków grafu zorientowanego to V={0,1,2,3}, zbiór krawędzi, w postaci (od, do,
+waga), to E={ (0,1,2),(0,3,5),(1,2,1),(2,3,0),(3,1,4)}. W algorytmie Dijkstry najkrótszych ścieżek z
+ustalonego źródła 0 kolejność, w jakiej wierzchołki otrzymują ostateczną wartość odległości jest
+* ##### (a) 1,2,3 
+* (b) 3,1,2 
+* (c) 2,1,3 
+* (d) 1,3,2 
+* (e) 2,3,1
+
+2. W pewnym momencie obliczania najkrótszych ścieżek algorytmem Forda-Bellmana w grafie
+zorientowanym zachodzi D[u]=17, D[v]=33, a waga krawędzi (u,v) wynosi -8. Algorytm wykonuje
+Relax(u, v). Otrzymujemy:
+* (a) błąd - waga krawędzi ujemna 
+* (b) D[u] = 25 
+* (c) D[v] = 27 
+* ##### (d) D[v] = 9 
+* (e) D[v] = 50
+
+3. W pewnym momencie obliczania najkrótszych ścieżek algorytmem Dijkstry w grafie
+zorientowanym zachodzi D[u]=10, D[v]=25, a waga krawędzi (u,v) wynosi 0. Algorytm wykonuje
+Relax(u, v). Otrzymujemy:
+* (a) błąd - waga krawędzi zerowa 
+* (b) D[u] = 25 
+* (c) D[v] = 25 
+* ##### (d) D[v] = 10 
+* (e) D[u] = 35
+
+4. W przypadku gdy graf zadany jest przez tablicę sąsiedztwa algorytm Dijkstry znajdowania
+najkrótszych ścieżek ma złożoność
+* (a) Θ(nm) 
+* (b) Θ(n+m) 
+* ##### (c) Θ(n2) 
+* (d) Θ(m log n) 
+* (e) Θ(m loglog n)
+
+5. Złożoność algorytmu Forda-Bellmana dla reprezentacji grafu przez listy sąsiedztwa wynosi
+* (a) Θ(n2) 
+* (b) Θ(n2log n) 
+* (c) Θ(n + m) 
+* ##### (d) Θ(m n) 
+* (e) Θ(m loglog n)
+________________________________________________________________________________________
+
+### 13. Minimalne drzewo rozpinające
+1. Zbiór wierzchołków grafu niezorientowanego to V={0,1,2,3}, zbiór krawędzi w postaci (od, do,
+waga) to E= {(0,1,10),(0,2,25),(1,2,20),(1,3,12),(2,3,25)}. W algorytmie Jarnika-Prima (start w
+wierzchołku 0) kolejność dodawanych do drzewa rozpinającego krawędzi jest
+* (a) (0,1),(1,2),(1,3) 
+* (b) (0,1),(1,3),(0,2)
+* (c) (0,1),(0,2),(1,3) 
+* ##### (d) (0,1),(1,3),(1,2)
+* (e) (0,2),(0,1),(1,3)
+
+2. Złożoność algorytmu Kruskala
+* (a) jest niewielomianowa
+* (b) jest liniowa
+* ##### (c) zależy od złożoności sortowania
+* (d) nie zależy od liczby krawędzi w grafie
+* (e) jest rzędu n3
+
+3. Klasyczne algorytmy znajdowania MST oparte są o technikę
+* (a) dziel i zwyciężaj
+* ##### (b) zachłanną
+* (c) programowania dynamicznego
+* (d) nawrotów
+* (e) bisekcji
+
+4. Algorytm Jarnika-Prima znajdowania najkrótszych ścieżek w wersji wykorzystującej kopiec
+(kolejkę priorytetową) ma złożoność
+* (a) Θ(nm) 
+* (b) Θ(n+m) 
+* (c) Θ(n log n) 
+* ##### (d) Θ(m log n) 
+* (e) Θ(m loglog n)
