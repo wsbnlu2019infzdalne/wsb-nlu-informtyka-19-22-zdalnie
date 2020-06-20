@@ -477,7 +477,7 @@ ________________________________________________________________________________
 ### 5. Metody pozycyjne sortowania
 
 1. Złożoność pesymistyczna sortowania przez zliczanie * (countsort)
-* ###(a) jest liniowa względem liczby elementów i zakresu wartości kluczy
+* ### (a) jest liniowa względem liczby elementów i zakresu wartości kluczy
 * (b) jest optymalna i wynosi Θ(n log n)
 * (c) jest rzędu kwadratowego
 * (d) nie zależy od wartości kluczy
@@ -487,7 +487,7 @@ ________________________________________________________________________________
 * (a) Θ(n log n) 
 * (b) Θ(n m)
 * (c) Θ(n2) 
-* ###(d) Θ(n+m)
+* ### (d) Θ(n+m)
 * (e) Θ(n loglog n)
 
 3. Złożoność pamięciowa sortowania metodą zliczania n kluczy o wartościach z przedziału [0..m-
@@ -495,7 +495,7 @@ ________________________________________________________________________________
 * (a) Θ(n) 
 * (b) Θ(n m)
 * (c) Θ(m) 
-* ###(d) Θ(n+m)
+* ### (d) Θ(n+m)
 * (e) Θ(n2)
 
 4. Po pierwszej z trzech faz algorytmu radixsort dla tablicy trzycyfrowych kluczy
@@ -503,7 +503,7 @@ ________________________________________________________________________________
 klucz (1,2,4) będzie w kolejności na miejscu (licząc od zera)
 * (a) 0 
 * (b) 1
-* ###(c) 2 
+* ### (c) 2 
 * (d) 3
 * (e) 2 lub 3
 ________________________________________________________________________________________
@@ -514,14 +514,14 @@ ________________________________________________________________________________
 elementowej wynosi około:
 * (a) 500 000 
 * (b) 100 000 
-* ###(c) 5 
+* ### (c) 5 
 * (d) 20 
 * (e) 100
 
 2. Złożoność pesymistyczna i średnia wyszukiwania połówkowego "bisekcja – 1 porównanie"
 wynosi odpowiednio:
 * (a) Θ(n) i Θ(log n)
-* ###(b) Θ(log n) i Θ(log n)
+* ### (b) Θ(log n) i Θ(log n)
 * (c) Θ(n) i Θ(log log n)
 * (d) Θ(log n) i Θ(n)
 * (e) Θ(log n) i Θ(log log n)
@@ -531,13 +531,13 @@ wynosi odpowiednio:
 równa się
 * (a) 1 
 * (b) 50
-* ###(c) 100 
+* ### (c) 100 
 * (d) 1000
 * (e) 900
 
 4. Oczekiwana liczba porównań dla wyszukiwania algorytmem "bisekcja 1 porównanie" (w
 tablicy długości 64000 dla metody połówkowej oraz interpolacyjnej wynosi odpowiednio (około)
-* ###(a) 16 i 4 
+* ### (a) 16 i 4 
 * (b) 16 i 16
 * (c) 32000 i 16
 * (d) 4 i 16
@@ -546,7 +546,7 @@ tablicy długości 64000 dla metody połówkowej oraz interpolacyjnej wynosi odp
 5. Zawartość tablicy a[0..8] to {1,3,5,5,5,5,10,10,13}. Wyszukujemy metodą połówkową
 * (binsearch - lowerbound) wartości X=4. W wyniku otrzymujemy indeks:
 * (a) 4 
-* ###(b) 2 
+* ### (b) 2 
 * (c) 3 
 * (d) 5 
 * (e) 6
@@ -557,7 +557,7 @@ ________________________________________________________________________________
 1. Do początkowo pustego drzewa BST wstawiamy kolejno 8, 16, 10, 5, 2 Poprzednikiem
 węzła 10 jest:
 * (a) żaden – 10 jest korzeniem 
-* ###(b) 16 
+* ### (b) 16 
 * (c) 10 
 * (d) 5 
 * (e) 2
@@ -565,7 +565,7 @@ węzła 10 jest:
 2. Aby otrzymać zawartość drzewa BST w kolejności rosnącej należy przeglądnąć drzewo w
 porządku 
 * (a) preorder 
-* ###(b) inorder 
+* ### (b) inorder 
 * (c) postorder 
 * (d) DFS 
 * (e) BFS
@@ -574,7 +574,7 @@ porządku
 1, 2, ... , n, w tej kolejności. W sumie wszystkie operacje kosztują
 * (a) Θ(n) 
 * (b) Θ(log n)
-* ###(c) Θ(n2) 
+* ### (c) Θ(n2) 
 * (d) Θ(n log n) 
 * (e) Θ(n loglog n)
 
@@ -583,14 +583,14 @@ porządku
 * (a) żaden (8 jest korzeniem) 
 * (b) 12 
 * (c) 10 
-* ###(d) 5 
+* ### (d) 5 
 * (e) 3
 
 5. Do początkowo pustego drzewa BST wstawiamy n różnych kluczy, w losowej kolejności.
 Złożoności pesymistyczna i średnia całego ciągu operacji wynoszą odpowiednio
 * (a) Θ(n) i Θ(n) 
 * (b) Θ(n2) i Θ(n)
-* ###(c) Θ(n2) i Θ(n log n) 
+* ### (c) Θ(n2) i Θ(n log n) 
 * (d) Θ(n log n) i Θ(n log n)
 * (e) Θ(n2) i Θ(n2)
 
@@ -598,7 +598,7 @@ Złożoności pesymistyczna i średnia całego ciągu operacji wynoszą odpowied
 wskaźników liczba pustych wskaźników (NULL) we wszystkich wierzchołkach wynosi
 * (a) n-1 
 * (b) n 
-* ###(c) n+1 
+* ### (c) n+1 
 * (d) 2n+1 
 * (e) 2n - 1
 
@@ -608,7 +608,7 @@ ________________________________________________________________________________
 1. W haszowaniu, "kolizja" oznacza, że
 * (a) w słowniku mogą być elementy o jednakowej wartości funkcji haszującej
 * (b) wartość funkcji haszującej wypada poza zakres tablicy
-* ###(c) w słowniku są elementy o jednakowej wartości funkcji haszującej
+* ### (c) w słowniku są elementy o jednakowej wartości funkcji haszującej
 * (d) zabrakło pamięci aby wstawić kolejny element
 * (e) żadne z pozostałych
 
@@ -618,21 +618,21 @@ na pozycji
 * (a) 4 
 * (b) 5 
 * (c) 0 
-* ###(d) 2 
+* ### (d) 2 
 * (e) 3
 
 3. Obsługa kolizji jest przez wtórną funkcję haszującą.
 Funkcja haszująca (pierwotna): h(x)=x mod 7; wtórna: g(x) = 6 – x mod 5.
 Wstawiono kolejno 9, 19, 23. Klucz 23 jest na pozycji
 * (a) 0 
-* ###(b) 1 
+* ### (b) 1 
 * (c) 4 
 * (d) 3 
 * (e) 6
 4. Jaka jest średnia złożoność wyszukiwania klucza w tablicy haszowanej, w dowolnej z
 poznanych metod usuwania kolizji (zakładając nie większe niż 50% wypełnienie):
 * (a) Θ(log n) 
-* ###(b) stała 
+* ### (b) stała 
 * (c) Θ(log log n) 
 * (d) Θ(n) 
 * (e) Θ(n log n)
@@ -643,13 +643,13 @@ Wstawiono kolejno 9, 18, 30. Klucz 30 jest na pozycji
 * (a) 0 
 * (b) 2 
 * (c) 4 
-* ###(d) 6
+* ### (d) 6
 * (e) 1
 
 6. W metodzie haszowania operacja usuwania elementu jest realizowalna efektywnie
 * (a) w każdej z metod usuwania kolizji
 * (b) w metodzie haszowania podwójnego
-* ###(c) w metodzie łańcuchowania
+* ### (c) w metodzie łańcuchowania
 * (d) w żadnej z metod
 * (e) w metodzie adresacji liniowej
 ________________________________________________________________________________________
@@ -658,7 +658,7 @@ ________________________________________________________________________________
 ### 11. Przegląd grafu
 1. Algorytm przeglądu grafu w głąb jest przykładem konstrukcji opartej na technice
 * (a) zachłannej 
-* ###(b) nawrotów * (backtracking) 
+* ### (b) nawrotów * (backtracking) 
 * (c) programowania dynamicznego
 * (d) dziel i zwyciężaj 
 * (e) połówkowej
@@ -667,7 +667,7 @@ ________________________________________________________________________________
 danych:
 * (a) stosu, stosu
 * (b) kolejki, kolejki
-* ###(c) kolejki, stosu
+* ### (c) kolejki, stosu
 * (d) kolejki priorytetowej, kolejki
 * (e) stosu, kolejki priorytetowej
 
@@ -675,7 +675,7 @@ danych:
 oraz list następników wynosi odpowiednio
 * (a) O(n2) i O(nm) 
 * (b) O(n+m) i O(n2)
-* ###(c) O(n2) i O(n+m) 
+* ### (c) O(n2) i O(n+m) 
 * (d) O(n) i O(m)
 * (e) O(n+m) i O(n m)
 
@@ -683,21 +683,21 @@ oraz list następników wynosi odpowiednio
 * (a) przeglądając BFS i obliczając odległości
 * (b) przeglądając DFS i porządkując rosnąco numerami postorder f[v]
 * (c) przeglądając DFS i porządkując rosnąco numerami preorder d[v]
-* ###(d) przeglądając DFS i porządkując malejąco numerami postorder f[v]
+* ### (d) przeglądając DFS i porządkując malejąco numerami postorder f[v]
 * (e) przeglądając BFS i obliczając głębokości
 
 5. Najszybsza metoda obliczania odległości pomiędzy dwoma ustalonymi wierzchołkami
 spójnego niezorientowanego grafu (wagi krawędzi równe 1) to
 * (a) algorytm Dijkstry
 * (b) algorytm Forda-Bellmana,
-* ###(c) algorytm BFS
+* ### (c) algorytm BFS
 * (d) algorytm DFS z numeracją f[v]
 * (e) algorytm DFS z numeracją d[v]
 
 6. Spośród wszystkich możliwych drzew rozpinających o ustalonym korzeniu s dla grafu
 niezorientowanego G, drzewo BFS
 * (a) jest najwyższe
-* ###(b) jest najniższe
+* ### (b) jest najniższe
 * (c) ma na ogół mniejszą liczbę krawędzi niż inne drzewa
 * (d) ma na ogół większą liczbę krawędzi niż inne drzewa
 * (e) żadna z pozostałych odpowiedzi
@@ -705,19 +705,19 @@ niezorientowanego G, drzewo BFS
 7. Aby sprawdzić czy graf zorientowany jest acykliczny
 * (a) stosujemy BFS i sprawdzamy krawędzie poprzeczne
 * (b) stosujemy DFS i sprawdzamy krawędzie poprzeczne
-* ###(c) stosujemy DFS i sprawdzamy krawędzie wsteczne
+* ### (c) stosujemy DFS i sprawdzamy krawędzie wsteczne
 * (d) stosujemy BFS i sprawdzamy stopnie wierzchołków
 * (e) stosujemy BFS i sprawdzamy krawędzie wzfdłużne
 
 8. Spójne składowe dowolnego grafu niezorientowanego można obliczyć w czasie
-* ###(a) O(n+m) 
+* ### (a) O(n+m) 
 * (b) O(n) 
 * (c) O(n m) 
 * (d) O(n2) 
 * (e) O(n2m)
 
 9. Najlepszy czas w jakim można posortować graf topologicznie jest rzędu dokładnie
-* ###(a) n+m 
+* ### (a) n+m 
 * (b) n log n 
 * (c) m log m 
 * (d) n2
@@ -729,7 +729,7 @@ ________________________________________________________________________________
 1. Zbiór wierzchołków grafu zorientowanego to V={0,1,2,3}, zbiór krawędzi, w postaci (od, do,
 waga), to E={ (0,1,2),(0,3,5),(1,2,1),(2,3,0),(3,1,4)}. W algorytmie Dijkstry najkrótszych ścieżek z
 ustalonego źródła 0 kolejność, w jakiej wierzchołki otrzymują ostateczną wartość odległości jest
-* ###(a) 1,2,3 
+* ### (a) 1,2,3 
 * (b) 3,1,2 
 * (c) 2,1,3 
 * (d) 1,3,2 
@@ -741,7 +741,7 @@ Relax(u, v). Otrzymujemy:
 * (a) błąd - waga krawędzi ujemna 
 * (b) D[u] = 25 
 * (c) D[v] = 27 
-* ###(d) D[v] = 9 
+* ### (d) D[v] = 9 
 * (e) D[v] = 50
 
 3. W pewnym momencie obliczania najkrótszych ścieżek algorytmem Dijkstry w grafie
@@ -750,14 +750,14 @@ Relax(u, v). Otrzymujemy:
 * (a) błąd - waga krawędzi zerowa 
 * (b) D[u] = 25 
 * (c) D[v] = 25 
-* ###(d) D[v] = 10 
+* ### (d) D[v] = 10 
 * (e) D[u] = 35
 
 4. W przypadku gdy graf zadany jest przez tablicę sąsiedztwa algorytm Dijkstry znajdowania
 najkrótszych ścieżek ma złożoność
 * (a) Θ(nm) 
 * (b) Θ(n+m) 
-* ###(c) Θ(n2) 
+* ### (c) Θ(n2) 
 * (d) Θ(m log n) 
 * (e) Θ(m loglog n)
 
@@ -765,7 +765,7 @@ najkrótszych ścieżek ma złożoność
 * (a) Θ(n2) 
 * (b) Θ(n2log n) 
 * (c) Θ(n + m) 
-* ###(d) Θ(m n) 
+* ### (d) Θ(m n) 
 * (e) Θ(m loglog n)
 ________________________________________________________________________________________
 
@@ -776,19 +776,19 @@ wierzchołku 0) kolejność dodawanych do drzewa rozpinającego krawędzi jest
 * (a) (0,1),(1,2),(1,3) 
 * (b) (0,1),(1,3),(0,2)
 * (c) (0,1),(0,2),(1,3) 
-* ###(d) (0,1),(1,3),(1,2)
+* ### (d) (0,1),(1,3),(1,2)
 * (e) (0,2),(0,1),(1,3)
 
 2. Złożoność algorytmu Kruskala
 * (a) jest niewielomianowa
 * (b) jest liniowa
-* ###(c) zależy od złożoności sortowania
+* ### (c) zależy od złożoności sortowania
 * (d) nie zależy od liczby krawędzi w grafie
 * (e) jest rzędu n3
 
 3. Klasyczne algorytmy znajdowania MST oparte są o technikę
 * (a) dziel i zwyciężaj
-* ###(b) zachłanną
+* ### (b) zachłanną
 * (c) programowania dynamicznego
 * (d) nawrotów
 * (e) bisekcji
@@ -798,5 +798,5 @@ wierzchołku 0) kolejność dodawanych do drzewa rozpinającego krawędzi jest
 * (a) Θ(nm) 
 * (b) Θ(n+m) 
 * (c) Θ(n log n) 
-* ###(d) Θ(m log n) 
+* ### (d) Θ(m log n) 
 * (e) Θ(m loglog n)
