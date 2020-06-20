@@ -358,10 +358,12 @@ ________________________________________________________________________________
 Kopiec wielkosci n
 
 przykąłdowy wykonie mógłby wyglądac tak:
+
 [1]
 * wypisanie korzenia
 * zamiana korzenia z ostatnim elementem kopca i usunięcie ostatniego elementu przez n--
 * downheap 
+
 [2]
 * wypisanie korzenia
 * zamiana korzenia z ostatnim elementem kopca i usunięcie ostatniego elementu przez n--
